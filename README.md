@@ -81,6 +81,8 @@ modelo_rf = clf.fit(x_treino_normalizado, y_treino)
 previsoes = modelo_rf.predict(x_teste_normalizado)
 precisao_rf = accuracy_score(y_teste, previsoes)
 print("Precisão do Modelo Random Forest: {:.2%}".format(precisao_rf))
+```
+```
 >>> Acertividade do modelo de RandomForest: 83.61%
 ```
 - A pontuação de precisão reflete a capacidade do modelo em prever a presença de doenças cardíacas.
