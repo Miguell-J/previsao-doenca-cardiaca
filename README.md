@@ -1,5 +1,7 @@
 # Classificação de Doenças Cardíacas com o Classificador Random Forest
 
+<img src="https://jaleko-blog-files.s3.amazonaws.com/wp-content/uploads/2020/01/23110233/large-anatomia-do-coracao.png"/>
+
 Bem-vindo a este projeto de classificação de doenças cardíacas! Este repositório contém um script em Python que utiliza um Classificador Random Forest para prever a probabilidade de ocorrência de doenças cardíacas com base em dados clínicos. Este guia detalhado irá ajudá-lo a entender e executar o código.
 
 ## Instalação
@@ -38,6 +40,8 @@ data = pd.read_csv("/content/heart.csv")
 sw = sv.analyze(data, target_feat="output")
 sw.show_html()
 ```
+
+<img src="dash_heart_dg.png"/>
 
 ## Pré-processamento dos Dados:
 
@@ -78,6 +82,7 @@ modelo_rf = clf.fit(x_treino_normalizado, y_treino)
 previsoes = modelo_rf.predict(x_teste_normalizado)
 precisao_rf = accuracy_score(y_teste, previsoes)
 print("Precisão do Modelo Random Forest: {:.2%}".format(precisao_rf))
+>>> Acertividade do modelo de RandomForest: 83.61%
 ```
 - A pontuação de precisão reflete a capacidade do modelo em prever a presença de doenças cardíacas.
 
@@ -94,6 +99,8 @@ plt.ylabel('Classe')
 plt.legend(loc='upper right')
 plt.show()
 ```
+
+<img src="grafico_coracao.png"/>
 
 ## Conclusão
 Este projeto fornece um roteiro abrangente para classificar a probabilidade de doenças cardíacas usando um Classificador Random Forest. Você pode adaptar o código ao seu conjunto de dados específico e personalizá-lo conforme necessário. Boa sorte no seu projeto de classificação de doenças cardíacas e na busca por insights valiosos a partir dos dados clínicos!
