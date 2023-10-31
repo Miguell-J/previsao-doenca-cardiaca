@@ -18,7 +18,6 @@ Este projeto é dividido em várias etapas essenciais:
 - Importe as bibliotecas necessárias para análise de dados, treinamento e visualização:
 
 ``` python
-Copy code
 import pandas as pd
 import sweetviz as sv
 from sklearn.model_selection import train_test_split
